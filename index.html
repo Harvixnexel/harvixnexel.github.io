@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harvix Nexel - AI Educator & Automation Builder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #ffffff;
+            color: #212121;
+        }
+        .hero-image {
+            background-image: url('https://via.placeholder.com/500x700/ffffff/2d5b9b?text=Berto');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .accent-text {
+            color: #2d5b9b;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .timeline-item:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            left: 24px;
+            top: 100%;
+            height: 100%;
+            width: 2px;
+            background: #2d5b9b;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm py-4 sticky top-0 z-50">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold">HN</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#beranda" class="hover:text-blue-700">Beranda</a>
+                <a href="#about" class="hover:text-blue-700">About me</a>
+                <a href="#projects" class="hover:text-blue-700">Project</a>
+                <a href="#social" class="hover:text-blue-700">Social Media</a>
+                <a href="#blog" class="hover:text-blue-700">Blog</a>
+                <a href="#contact" class="hover:text-blue-700">Contact</a>
+            </div>
+            <button class="md:hidden">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <section id="beranda" class="py-20">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-10 md:mb-0">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Harvix Nexel</h1>
+            <h2 class="text-2xl md:text-3xl font-semibold mb-6 accent-text">AI Educator and Automation Builder</h2>
+            <p class="text-lg mb-8">Bangun edukasi AI dan alur kerja yang otomatis</p>
+            <div class="flex space-x-4">
+                <a href="#contact" class="bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-lg transition">Hubungi Saya</a>
+                <a href="#about" class="border-2 border-blue-700 text-blue-700 hover:bg-blue-50 px-6 py-3 rounded-lg transition">Tentang Saya</a>
+            </div>
+        </div>
+        <div class="md:w-1/2 hero-image flex justify-center items-center mt-10 md:mt-0">
+            <!-- Gambar bulat lebih besar dan sedikit digeser ke bawah -->
+            <div class="w-72 h-72 rounded-full overflow-hidden bg-gray-100">
+                <img src="Image/WhatsApp Image 2025-05-16 at 22.35.13.jpeg"
+                     alt="Foto Harvix Nexel" 
+                     class="w-full h-full object-cover object-top translate-y-0.50">
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Section B - About Me -->
+<section id="about" class="py-20 bg-gray-50">
+    <div class="w-full max-w-screen-xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Tentang Saya</h2>
+        <div class="flex flex-col lg:flex-row items-center lg:items-start gap-12">
+            <div class="w-full lg:w-1/3 flex justify-center">
+                <div class="w-64 h-64 rounded-full bg-blue-100 flex items-center justify-center overflow-hidden">
+                    <img src="Image/WhatsApp Image 2025-05-16 at 22.35.13.jpeg" alt="Harvix Nexel" class="w-full h-full object-cover object-top">
+                </div>
+            </div>
+            <div class="w-full lg:w-2/3">
+                <h3 class="text-2xl font-bold mb-4">Harvix Nexel</h3>
+                <p class="mb-6">
+                    Sebagai anak muda yang sedang belajar sekaligus membangun edukasi dan sistem workflow automation AI. 
+                    Saya menjembatani dunia teknis dan manusia lewat komunikasi sederhana, pendekatan humanis, dan strategi yang presisi.
+                </p>
+                <div class="mb-8">
+                    <h4 class="text-xl font-semibold mb-4 accent-text">Skill Utama:</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+                            <i class="fas fa-code text-blue-700 text-2xl mb-2"></i>
+                            <h5 class="font-semibold">Prompt Engineering</h5>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+                            <i class="fas fa-robot text-blue-700 text-2xl mb-2"></i>
+                            <h5 class="font-semibold">AI Workflow Automation</h5>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+                            <i class="fas fa-microphone text-blue-700 text-2xl mb-2"></i>
+                            <h5 class="font-semibold">Public Speaking</h5>
+                        </div>
+                    </div>
+                </div>
+                <a href="PDF/CV Harvix Nexel.pdf" download>
+                    <button class="bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-lg transition flex items-center">
+                        <i class="fas fa-download mr-2"></i> Download CV Saya
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Section C - Project & Pengalaman -->
+    <section id="projects" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Project & Pengalaman</h2>
+            
+            <!-- Project Unggulan -->
+            <div class="mb-20">
+                <h3 class="text-2xl font-semibold mb-8 accent-text text-center">Project Unggulan</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Project 1 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 card-hover transition duration-300">
+                        <div class="h-48 bg-gray-100 flex items-center justify-center">
+                            <img src="Image/Flux_Dev_A_clean_futuristic_vector_illustration_depicting_a_wo_1.jpg" alt="Project 1" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <h4 class="font-bold text-xl mb-2">Followup Automation</h4>
+                            <p class="text-gray-600">Saya bangun alur pemesanan otomatis lengkap dengan notifikasi WhatsApp dan email follow up ke pelanggan.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 card-hover transition duration-300">
+                        <div class="h-48 bg-gray-100 flex items-center justify-center">
+                            <img src="Image/Flux_Dev_A_modern_and_clean_illustration_showcasing_an_AIpower_1.jpg" alt="Project 2" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <h4 class="font-bold text-xl mb-2">Spesific Prompt for UMKM</h4>
+                            <p class="text-gray-600">Saya rancang prompt AI khusus bisnis UMKM lengkap dengan rekomendasi tools dan panduan penggunaannya.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 card-hover transition duration-300">
+                        <div class="h-48 bg-gray-100 flex items-center justify-center">
+                            <img src="Image/Flux_Dev_A_modern_vectorstyle_illustration_showing_a_workflow__3.jpg" alt="Project 3" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <h4 class="font-bold text-xl mb-2">Workflow Automation satu arah</h4>
+                            <p class="text-gray-600">Saya membuat sistem pemesanan otomatis yang langsung simpan data dan kirim notifikasi WhatsApp ke owner atau admin bisnis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pengalaman -->
+            <div>
+                <h3 class="text-2xl font-semibold mb-8 accent-text text-center">Pengalaman</h3>
+                <div class="space-y-8 relative">
+                    <!-- Experience 1 -->
+                    <div class="flex items-start timeline-item relative pl-16">
+                        <div class="absolute left-0 top-0 w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-xl mb-1">Belajar dan menyelesaikan project AI</h4>
+                            <p class="mb-2">Tekun dan fokus belajar serta menyelesaikan project mini AI mulai untuk diri sendiri hingga client.</p>
+                            <p class="text-sm text-gray-500">2022 – Sekarang</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Experience 2 -->
+                    <div class="flex items-start timeline-item relative pl-16">
+                        <div class="absolute left-0 top-0 w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-xl mb-1">Bangun ekosistem belajar</h4>
+                            <p class="mb-2">Memanfaatkan sosial media sebagai wadah untuk share edukasi AI.</p>
+                            <p class="text-sm text-gray-500">Sept 2024 – Sekarang</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="social" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Sosial Media</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Instagram -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 card-hover transition duration-300">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <i class="fab fa-instagram text-2xl mr-3 text-pink-600"></i>
+                        <h3 class="font-bold text-lg">AI Wave</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Berbagi informasi teknisi AI dengan gaya penyampaian yang mudah dimengerti oleh orang awam yang belum paham tentang AI itu sendiri.</p>
+                    <a href="https://www.instagram.com/ai.waveid?igsh=aDVncTRnZmNhZ2xk" target="_blank" rel="noopener noreferrer" class="inline-block bg-blue-700 hover:bg-blue-800 text-white px-4 py-2 rounded transition">Lihat di sini</a>
+                </div>
+            </div>
+            
+            <!-- TikTok -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 card-hover transition duration-300">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <i class="fab fa-tiktok text-2xl mr-3 text-black"></i>
+                        <h3 class="font-bold text-lg">AI Wave</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Sama seperti Instagram, dengan pendekatan video pendek dan media gambar yang informatif.</p>
+                    <a href="https://www.tiktok.com/@ai.wave07?_t=ZS-8wP7lLyC0fP&_r=1" target="_blank" rel="noopener noreferrer" class="inline-block bg-blue-700 hover:bg-blue-800 text-white px-4 py-2 rounded transition">Lihat di sini</a>
+                </div>
+            </div>
+            
+            <!-- Discord -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 card-hover transition duration-300">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <i class="fab fa-discord text-2xl mr-3 text-indigo-600"></i>
+                        <h3 class="font-bold text-lg">Society Nexel</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Memberikan wadah untuk interaksi antar teknisi dan pengguna agar bisa saling memberikan value.</p>
+                    <a href="https://discord.gg/uyP9UwrK" target="_blank" rel="noopener noreferrer" class="inline-block bg-blue-700 hover:bg-blue-800 text-white px-4 py-2 rounded transition">Lihat di sini</a>
+                </div>
+            </div>
+            
+            <!-- Notion -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 card-hover transition duration-300">
+    <div class="p-6">
+        <div class="flex items-center mb-4">
+            <!-- Logo Notion sebagai SVG -->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Notion-logo.svg" alt="Notion Logo" class="w-8 h-8 mr-3">
+            <h3 class="font-bold text-lg">Notion</h3>
+        </div>
+        <p class="text-gray-600 mb-4">Berbagi kumpulan tools, prompt, dan sistem buatan saya.</p>
+        <a href="https://www.notion.so/Prompt-ChatGpt-by-Nexel-17ea3b10c0978078a182c9fb71458c63?pvs=4" target="_blank" rel="noopener noreferrer" class="inline-block bg-blue-700 hover:bg-blue-800 text-white px-4 py-2 rounded transition">Lihat di sini</a>
+    </div>
+</div>
+</section>
+
+
+    <!-- Section E - Blog -->
+    <section id="blog" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Blog</h2>
+            
+            <!-- Filter Controls -->
+            <div class="mb-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="flex space-x-4">
+                    <select class="border rounded px-3 py-2">
+                        <option>Pilih Bulan</option>
+                        <option>Mei 2025</option>
+                        <option>April 2025</option>
+                    </select>
+                    <select class="border rounded px-3 py-2">
+                        <option>Pilih Tahun</option>
+                        <option>2025</option>
+                        <option>2024</option>
+                    </select>
+                </div>
+                <div class="relative w-full md:w-auto">
+                    <input type="text" placeholder="Cari artikel..." class="border rounded px-4 py-2 w-full md:w-64 pl-10">
+                    <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+                </div>
+            </div>
+            
+            <!-- Blog List -->
+            <div class="space-y-8">
+               <!-- Blog 1 -->
+    <div class="border-b pb-8">
+        <div class="flex items-center mb-2">
+            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">Mei 2025</span>
+        </div>
+        <h3 class="text-2xl font-bold mb-2">Bagaimana AI Bisa Mengembalikan Waktu Kita</h3>
+        <p class="text-gray-600 mb-4">Dengan adanya AI hidup kita sebagai manusia bisa lebih ringan karena sudah ada alat yang bisa menggantikan peran kita.</p>
+        <span class="font-medium text-gray-700 hover:text-blue-700 transition cursor-pointer">~HN</span>
+    </div>
+
+    <!-- Blog 2 -->
+    <div class="border-b pb-8">
+        <div class="flex items-center mb-2">
+            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">April 2025</span>
+        </div>
+        <h3 class="text-2xl font-bold mb-2">AI Bukan Alat Tapi Rekan Kerja</h3>
+        <p class="text-gray-600 mb-4">Dia bukan tools seperti Google atau tools lain tapi merupakan sebuah entitas yang bisa diajak saling kerja sama.</p>
+        <span class="font-medium text-gray-700 hover:text-blue-700 transition cursor-pointer">~HN</span>
+    </div>
+</div>
+            
+            <!-- Pagination -->
+            <div class="mt-12 flex justify-center">
+                <nav class="flex items-center space-x-2">
+                    <button class="px-3 py-1 rounded border">← Sebelumnya</button>
+                    <button class="px-3 py-1 rounded bg-blue-700 text-white">1</button>
+                    <button class="px-3 py-1 rounded border hover:bg-gray-50">2</button>
+                    <button class="px-3 py-1 rounded border">Selanjutnya →</button>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+   <!-- Section F - Contact -->
+<section id="contact" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Hubungi Saya</h2>
+
+        <div class="flex flex-col md:flex-row gap-12">
+            <!-- Contact Form -->
+            <div class="md:w-1/2">
+                <form action="https://formspree.io/f/xwpoyblr" method="POST" class="space-y-6">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+
+                    <div>
+                        <label for="name" class="block font-medium mb-2">Nama</label>
+                        <input type="text" id="name" name="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block font-medium mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                    </div>
+                    <div>
+                        <label for="message" class="block font-medium mb-2">Pesan</label>
+                        <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                    </div>
+                    <button type="submit" class="bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-lg transition w-full">Kirim Pesan</button>
+                </form>
+            </div>
+
+            <!-- Direct Contact -->
+            <div class="md:w-1/2">
+                <h3 class="text-xl font-semibold mb-6">Via:</h3>
+                <div class="space-y-4">
+                    <!-- Email -->
+                    <a href="mailto:aixelvix@gmail.com" class="flex items-center p-4 bg-white rounded-lg shadow-sm border border-gray-100 hover:bg-gray-50 transition">
+                        <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                            <i class="fas fa-envelope text-blue-700"></i>
+                        </div>
+                        <span class="font-medium">Email</span>
+                    </a>
+
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/6281247085740?text=Hai%kak%20Nexel" target="_blank" class="flex items-center p-4 bg-white rounded-lg shadow-sm border border-gray-100 hover:bg-gray-50 transition">
+                        <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center mr-4">
+                            <i class="fab fa-whatsapp text-green-700"></i>
+                        </div>
+                        <span class="font-medium">WhatsApp</span>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/harvixnexel?igsh=MTZ4Z3BhMXpreWplOQ==" target="_blank" class="flex items-center p-4 bg-white rounded-lg shadow-sm border border-gray-100 hover:bg-gray-50 transition">
+                        <div class="w-10 h-10 rounded-full bg-pink-100 flex items-center justify-center mr-4">
+                            <i class="fab fa-instagram text-pink-600"></i>
+                        </div>
+                        <span class="font-medium">Instagram</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Section G - Footer -->
+    <footer class="bg-gray-900 text-white py-6">
+  <div class="container mx-auto px-4 text-center">
+    <div class="flex justify-center space-x-6 mb-4">
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/ai.waveid?igsh=aDVncTRnZmNhZ2xk" target="_blank" class="hover:text-pink-400 text-xl">
+        <i class="fab fa-instagram"></i>
+      </a>
+
+      <!-- TikTok -->
+      <a href="https://www.tiktok.com/@ai.wave07?_t=ZS-8wP7lLyC0fP&_r=1" target="_blank" class="hover:text-white text-xl">
+        <i class="fab fa-tiktok"></i>
+      </a>
+
+      <!-- Discord -->
+      <a href="https://discord.gg/uyP9UwrK" target="_blank" class="hover:text-indigo-400 text-xl">
+        <i class="fab fa-discord"></i>
+      </a>
+
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/harvix-nexel-b1521a365?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="hover:text-blue-400 text-xl">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+    <p class="text-sm">&copy; 2025 Harvix Nexel. All rights reserved.</p>
+  </div>
+</footer>
+
+
+    <script>
+        // Simple form validation
+        document.querySelector('form').addEventListener('submit', function(e) {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            if (!name || !email || !message) {
+                e.preventDefault();
+                alert('Mohon lengkapi semua field!');
+            }
+        });
+        
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
